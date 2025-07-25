@@ -24,7 +24,7 @@
 
       responseDiv.innerHTML = "Loading...";
       try {
-        const res = await fetch("http://localhost:8000/ask", {
+        const res = await fetch("https://chatgpt-backend.onrender.com/ask", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ question }),
